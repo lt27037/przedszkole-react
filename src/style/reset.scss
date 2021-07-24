@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'colors';
+
+*{
+	box-sizing: border-box;
+	font-family: $font-popins;
+	font-size: 16px;
+	font-weight: 400;
+	color: $font-dark;
+}
+
+body{
+	background: $color-lighter-gray;
+	margin: 0;
+}
