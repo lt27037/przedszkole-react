@@ -1,0 +1,23 @@
+@import '../../../../../style/';
+
+.conteiner{
+    @include element-flex(column, center, center);
+    @include constant-width;
+    width: 100%;
+    background: #f5f5f5;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.title{
+    font-size: $font-xl;
+    color: $font-dark;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,31 @@
+@import '../../../../../style/';
+
+.container{
+    @include constant-width;
+    @include element-flex(column, flex-start, flex-start);
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.title{
+    font-family: $font-nunito;
+    margin-bottom: 30px;
+    font-size: $font-xl;
+    color: $font-dark;
+}
+
+.wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 96px;
+}
+
+.text{
+    text-align: justify;
+    font-size: $font-s;
+    color: $font-dark;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}

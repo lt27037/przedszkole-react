@@ -1,9 +1,10 @@
 @import 'vars';
 @import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
 
 *{
 	box-sizing: border-box;
-	font-family: $font-popins;
+	font-family: $font-nunito;
 	font-size: 16px;
 	font-weight: 400;
 	color: $font-dark;
