@@ -12,7 +12,7 @@ const Main = () => {
             <img alt={'Logo'} src={logo} className={style.logo} />
             <div>
                 <span className={style.label}>Rok szkolny 2021/2022</span>
-                <h1 className={style.title}>Rekrutacja</h1>
+                <h1 className={style.title}>Trwa Rekrutacja</h1>
                 <button className={style.button}>Zobacz szczegóły</button>
             </div>
         </section>

@@ -1,0 +1,54 @@
+@import '../../../../../style/';
+
+.container{
+    @include constant-width;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.wrapper{
+    @include element-flex(column, center, flex-start);
+    width: 100%;
+    height: 100%;
+    row-gap: 30px;
+}
+
+.box{
+    @include element-flex(column, flex-start, flex-start);
+}
+
+.logo{
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}
+
+.logoWrapper{
+    @include element-flex(column, center, center);
+    width: 100%;
+    height: 100%;
+}
+
+.label{
+    font-size: $font-m;
+    color: $font-dark;
+    font-weight: 200;
+    text-align: center;
+}
+
+.text{
+    font-size: $font-l;
+    color: $font-dark;
+    text-align: center;
+}
+
+.title{
+    font-size: $font-xl;
+    color: $font-dark;
+    margin-bottom: 50px;
+    grid-column: 1 / 3;
+    text-align: center;
+}
