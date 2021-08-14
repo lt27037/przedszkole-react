@@ -8,6 +8,7 @@ import Contact from '../components/sections/Contact';
 import {Footer} from '../../../components';
 
 import style from './style.scss';
+import Recruitment from "../components/sections/Recruitment";
 
 const Landing = () => {
     return (
@@ -15,6 +16,7 @@ const Landing = () => {
             <Main />
             <Info />
             <Mission />
+            <Recruitment />
             <Contact />
             <Footer />
         </div>

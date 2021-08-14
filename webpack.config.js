@@ -66,7 +66,7 @@ module.exports = (env) => ({
                 ],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                test: /\.(png|jpg|jpeg|gif)$/,
                 use: [
                     'file-loader',
                 ],
@@ -75,6 +75,13 @@ module.exports = (env) => ({
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [
                     'file-loader',
+                ],
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    '@svgr/webpack',
+                    'file-loader'
                 ],
             },
         ]
@@ -86,6 +93,7 @@ module.exports = (env) => ({
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public', 'index.html'),
             title: 'Caching',
+            favicon: path.resolve(__dirname, 'public', 'favicon.png'),
         }),
     ]
 });

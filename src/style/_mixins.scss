@@ -4,10 +4,13 @@
 	width: 100%;
 	padding: 0 calc(50vw - 600px);
 	@include smDesktopWidth(){
-		padding: 30px 20px;
+		padding: 50px 70px;
 	}
 	@include tabletWidth(){
 		padding: 0;
+	}
+	@include phoneWidth{
+		padding: 30px 20px;
 	}
 }
 
@@ -20,7 +23,7 @@
 
 @mixin main-title{
 	font-size: $font-xl;
-	font-family: $font-ultra;
+	font-family: $font-nunito;
 }
 
 @mixin desktopWidth {
@@ -37,6 +40,12 @@
 
 @mixin tabletWidth {
 	@media screen and (max-width: $screen-sm) {
+	  @content;
+	}
+}
+
+@mixin phoneWidth {
+	@media screen and (max-width: $screen-xs) {
 	  @content;
 	}
 }

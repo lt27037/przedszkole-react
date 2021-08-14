@@ -1,21 +1,21 @@
 import React from 'react';
 
 import OfferItem from '../../OfferItem';
-import zdrowie from '../../../../../assets/img/przedszkole4.svg';
-import zabawki from '../../../../../assets/img/przedszkole5.svg';
-import wizyta from '../../../../../assets/img/przedszkole3-2.svg';
+import zdrowie from 'src/assets/img/zdrowie.svg';
+import zabawki from 'src/assets/img/zabawki.svg';
+import wizyta from 'src/assets/img/wizyta.svg';
 
 import style from './style.scss';
 
 const data = [
     {
         title: 'Nowoczesne wyposażenie',
-        image:  wizyta,
-        content: 'Dolor sit amet consectetur adipisicing elit. Deserunt facilis voluptatibus alias, repellendus quam doloribus labore vel fugit.',
+        image:  zabawki,
+        content: 'Dolor sit amet consectetur adipisicing elit. Deserunt facilis voluptatibus alias, repellendus quam doloribus labore vel fugit doloribus unde corporis.',
     },
     {
         title: 'Wizyty specjalistów',
-        image:  zabawki,
+        image:  wizyta,
         content: 'Possimus dignissimos aspernatur praesentium delectus a reiciendis obcaecati, perferendis unde veritatis autem optio doloremque labore vel fugit laboriosam. Culpa voluptatum ut minus?',
     },
     {
@@ -27,7 +27,7 @@ const data = [
 
 const Info = () => {
     return (
-        <section className={style.conteiner}>
+        <section className={style.container}>
             <span className={style.title}>Dlaczego nasza placówka?</span>
             <div className={style.wrapper}>
                 {

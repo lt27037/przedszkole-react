@@ -1,4 +1,4 @@
-@import '../../../../../style/';
+@import '../../../../../style';
 
 .container{
     @include constant-width;
@@ -6,6 +6,16 @@
     width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
+    z-index: 2;
+
+    @include tabletWidth{
+        padding: 50px;
+    }
+
+    @include phoneWidth{
+        padding: 50px 30px;
+    }
+
 }
 
 .title{
@@ -13,6 +23,12 @@
     margin-bottom: 30px;
     font-size: $font-xl;
     color: $font-dark;
+
+    @include phoneWidth{
+        text-align: center;
+        margin: 0 auto 30px;
+        font-size: $font-l;
+    }
 }
 
 .wrapper{
@@ -20,6 +36,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 96px;
+
+    @include tabletWidth{
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
 }
 
 .text{

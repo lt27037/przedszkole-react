@@ -1,4 +1,4 @@
-@import '../../../style/';
+@import '../../../style';
 
 .footer{
     @include element-flex(row, flex-start, center);
@@ -9,6 +9,7 @@
     position: relative;
     color: rgb(163, 163, 163);
     font-size: $font-xxs;
+    overflow: hidden;
     &::after{
         content: '';
         width: 1200px;
@@ -18,5 +19,15 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    @include tabletWidth{
+        padding: 20px 50px;
+        @include element-flex(column, center ,center);
+        text-align: center;
+    }
+
+    @include tabletWidth{
+        padding: 30px 20px;
     }
 }

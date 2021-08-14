@@ -7,7 +7,7 @@ import style from './style.scss';
 const Contact = () => {
     return (
         <section className={style.container}>
-            <span className={style.title}>Skontaktuj się z nami</span>
+            <span className={style.title}>Skontaktuj się z nami!</span>
             <div className={style.wrapper}>
                 <div className={style.box}>
                     <span className={style.label}>Kontakt</span>

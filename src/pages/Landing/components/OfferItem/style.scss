@@ -1,4 +1,4 @@
-@import '../../../../style/';
+@import '../../../../style';
 
 .container{
     @include element-flex(column, flex-start, center);
@@ -8,21 +8,46 @@
     background-color: #ffffff;
     border: 1px solid #f0f0f0;
     border-radius: 13px;
-    box-shadow: 4px 4px 15px #f0f0f0;
+    box-shadow: 4px 2px 15px $first-background-color;
+
+    @include tabletWidth{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    @include phoneWidth{
+        padding: 30px 20px;
+    }
 }
 
 .label{
+    @include element-flex(column, center, center);
     color: $font-dark;
     font-size: $font-m;
     text-align: center;
     letter-spacing: -1px;
+
+    @include  smDesktopWidth{
+        height: 70px;
+        font-size: $font-l;
+        margin-bottom: 10px;
+        line-height: $font-l;
+    }
 }
 
 .image{
-    height: 180px;
     max-width: 100%;
     object-fit: contain;
+    height: 200px;
     margin: 20px 0;
+
+    @include tabletWidth{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
 }
 
 .text{
@@ -30,5 +55,15 @@
     text-align: center;
     font-weight: 200;
     letter-spacing: 0.5px;
+
+    @include tabletWidth{
+        font-size: $font-m;
+        line-height: 37px;
+    }
+    
+    @include phoneWidth{
+        line-height: normal;
+        font-size: 20px;
+    }
 }
 
